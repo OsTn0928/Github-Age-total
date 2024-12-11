@@ -1,0 +1,352 @@
+
+*{
+    font-family: cursive;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para la barra de navegación */
+.div-father {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    margin-left: -1dvh
+}
+
+.nav-title {
+    display: flex;
+    color: white;
+    font-size: 4dvh;
+    margin: 25px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-bottom: 45px;
+    padding: 0;
+    font-size: 4dvh;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 2dvh;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    margin: 2dvh;
+}
+
+.btn {
+    background-color: #17a2b7; /* Color de fondo azul del botón */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+    font-size: 2dvh; /* Tamaño de fuente igual al de los enlaces */
+    font-weight: bold;
+    margin-left: 275px; 
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    transition: 1s ;
+    border: #000000;
+}
+
+.btn:hover {
+    background-color: #008CBA; /* Color de fondo azul claro al pasar el ratón */
+    color: white; /* Texto blanco */
+    box-shadow: 0px 0px 15px 2dvh #008CBA;
+    transition: 1s ;
+    border-radius: 5px;
+}
+
+.container-master{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-father {
+    display: flex;
+    margin: 5dvh;
+    /*NO TOCAR*/
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info {
+    outline: solid 3px #cccccc;
+    padding-bottom: 3dvh;
+}
+
+.user-card-top {
+    background-color: #17a2b7;
+
+}
+.user-card-mid {
+    margin: 1dvh;
+    margin-left: 5dvh;
+    font-size: 2dvh;
+    margin-top: 7dvh;
+    margin-bottom: dvh;
+}
+
+.user-img {
+    width: 15dvh;
+    height: 15dvh;
+    margin: 3dvh;
+    margin-right: 45dvh;
+    border-radius: 50%;
+    outline: solid 6px #ffffff;
+    margin-bottom: -8dvh;
+}
+
+.img-map {
+    height: 3dvh;
+    margin-right: 2dvh;
+}
+
+.edit-profile {
+    color:#008CBA;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.edit-profile:hover {
+    background-color: #008CBA; /* Color de fondo azul claro al pasar el ratón */
+    color: white; /* Texto blanco */
+    box-shadow: 0px 0px 8px 5px #008CBA;
+    transition: 0.5s ;
+}
+
+.img-gear {
+    height: 2dvh;
+    margin-right: 0.8dvh;
+    margin-bottom: -0.2dvh; 
+}
+
+.edu-info {
+    margin-top: 5dvh;
+    outline: solid 3px #cccccc;
+}
+
+.edu-card-top {
+    background-color: #333333;
+    color: white;
+    padding: 0.5dvh
+}
+
+.edu-card-top h2 {
+    margin-left: 5dvh;
+    font-size: 3dvh;
+    margin-top: 1dvh;
+    margin-bottom: 1dvh;
+}
+
+.edu-card-mid {
+    margin-left: 5dvh;
+    padding-bottom: 1dvh;
+}
+
+.mydate {
+    margin-bottom: 3dvh;
+    font-size: 2.3dvh;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 2dvh;
+    color: #7a7a7a;
+    margin-top: -4dvh;
+}
+
+.edu-card-mid h4 {
+    font-size: 3dvh;
+    margin-top: 1dvh;
+}
+
+.container-right {
+    margin-left: 5dvh;
+    margin-top: 34.8dvh;
+}
+
+.cn-info {
+    outline: 3px solid #cccccc;
+    margin-top: -33dvh;
+}
+
+.back-site-request {
+    margin: 2dvh;
+}
+
+.cn-request-top {
+    display: flex;
+    background-color: #333333;
+    color: white;
+    padding: 1dvh 1dvh;
+    justify-content: flex-start; /* Alinear hacia la izquierda */
+    align-items: center; /* Alinear verticalmente */
+    gap: 2dvh; /* Espacio entre el número y el texto */
+    margin-bottom: -3dvh;
+}
+
+.cn-request-top a {
+    height: 5dvh;
+    width: 5dvh;
+    background-color: #7a7a7a;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar el número */
+    border-radius: 50%; /* Redondear completamente */
+    font-size: 4dvh;
+    margin: 0; /* Eliminar márgenes */
+}
+
+.cn-request-mid {
+    padding-top: 1dvh;
+}
+
+.cn-request-mid ul {
+    list-style-type: none; /* Eliminar puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.cn-request-mid li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1dvh 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.cn-request-mid img {
+    height: 7dvh;
+    width: 7dvh;
+    border-radius: 50%; /* Hacer la imagen circular */
+    object-fit: cover; /* Asegurarse de que la imagen mantenga sus proporciones */
+    margin-right: 1dvh; /* Separar la imagen del texto */
+}
+
+.request-icons {
+    display: flex;
+    gap: 1dvh; /* Espacio entre los íconos */
+}
+
+.request-icons img {
+    height: 5dvh;
+    width: 5dvh;
+    cursor: pointer;
+}
+
+.request-icons img:hover {
+    filter: brightness(1.2); /* Brillo al pasar el ratón */
+    transition: 0.3s;
+    transform: scale(1.1); /* Agrandar el tamaño al pasar el ratón */
+    background-color: #cccccc; /* Color de fondo del icono al pasar el ratón */
+    box-shadow: 0px 0px 5px 2px #575252; /* Efecto de sombra al pasar el ratón */
+
+}
+
+/* Estilo para el contenedor general */
+.your-info {
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 6dvh;
+    outline: solid 3px #cccccc;
+}
+
+/* Parte superior que contiene el span */
+.your-connections-top {
+    display: flex;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+    padding: 3dvh 3dvh;
+    font-weight: bold;
+    font-size: 2dvh;
+}
+
+/* Estilo para el span del número de conexiones */
+.your-connections-top span {
+    background-color: #7a7a7a;
+    border-radius: 20px;
+    padding: 0.5dvh 1dvh;
+    margin-right: 1dvh;
+}
+
+/* Parte media que contiene la lista de conexiones */
+.your-connections-mid {
+    padding: 1dvh 2dvh;
+}
+
+/* Lista de conexiones */
+.connections-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cada elemento de la lista */
+.connections-list li {
+    display: flex;
+    align-items: center;
+    padding: 1dvh 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+/* Estilo para las imágenes de perfil */
+.connections-list img {
+    height: 5dvh;
+    width: 5dvh;
+    border-radius: 50%;
+    margin-right: 1dvh;
+    object-fit: cover;
+}
+
+/* Estilo para el enlace "View More" */
+.view-more {
+    text-align: center;
+    margin-top: 1dvh;
+}
+
+.view-more a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-more a:hover {
+    text-decoration: underline;
+    background-color:  #008CBA; /* Color de fondo azul claro al pasar el ratón */
+    color: white; /* Texto blanco */
+    box-shadow: 0px 0px 8px 5px #008CBA;
+    transition: 0.5s ;
+}

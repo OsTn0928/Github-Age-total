@@ -1,0 +1,68 @@
+/* Elimina cualquier margen y padding en la página */
+* {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+
+}
+
+/* Asegura que el contenido ocupe toda la pantalla */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 0px;
+    width: auto;
+}
+
+/* Espaciado de los títulos */
+
+/* Flexbox container */
+.row {
+    display: flex;
+    width: auto; 
+    margin-bottom: 20px;
+
+}
+
+/* Estilo básico para las columnas */
+.col, .col-2, .col-3 {
+    background-color: #5a9ea1; /* Color de fondo similar al de la imagen */
+    padding: 20px;
+    text-align: left;
+    color: white; /* Texto en blanco para buen contraste */
+}
+
+/* Cada columna ocupa el 25% del ancho del contenedor */
+.col {
+    flex: 1;
+    margin: 0 10px; /* Espacio entre columnas */
+}
+
+/* Para la columna de 2/3 del espacio */
+.col-2 {
+    flex: 2; /* Ocupa el doble de espacio que .col */
+    margin: 0 auto;
+}
+
+/* Para la columna de 3/5 del espacio */
+.col-3 {
+    flex: 3; /* Ocupa tres quintos del espacio */
+    margin: 0 10px;
+    margin-right: 0px;
+}
+
+/* Ajustes para eliminar el margen de la primera columna */
+.row .col:first-child {
+    margin-left: auto;
+}
+
+/* Aplica márgenes solo a las columnas intermedias (no la primera ni la última) */
+.row .col:not(:first-child):not(:last-child) {
+    margin: 0 10px;
+}
+
+/* Ajustes para eliminar el margen de la ultima columna */
+.row .col:last-child {
+    margin-right: auto;
+}
+

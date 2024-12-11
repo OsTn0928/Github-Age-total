@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    width: 600px; /* Aumenta un poco el ancho de la tarjeta */
+    height: 310px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    height: 70px;  /* Aumenta la altura del header */
+    background-color: #17A2B8;
+    position: relative;
+}
+
+.profile-avatar {
+    position: relative;
+    top: -30px;  /* Ajusta la posición vertical del avatar */
+    left: 20px;  /* Ajusta la posición horizontal del avatar */
+    width: 80px;  /* Tamaño del avatar */
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile-info {
+    padding-left: 20px;  /* Ajusta el padding para mayor alineación con el avatar */
+}
+
+.profile-info h2 {
+    font-size: 1.4rem;
+    margin-top: -20px;  /* Reduce el margen superior para acercar el h2 al avatar */
+    margin-bottom: 8px;  /* Ajusta el espacio entre el h2 y el siguiente elemento */
+}
+
+.profile-info .location {
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;  /* Ajusta el espaciado */
+}
+
+.profile-info .location .icon {
+    width: 12px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.profile-info .description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.edit-profile {
+    text-decoration: line;
+    color: #007bff;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;  /* Ajusta el espaciado */
+}
+
+.edit-profile .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
